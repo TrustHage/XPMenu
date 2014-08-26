@@ -1,0 +1,7 @@
+name: XPShop
+main: me.stadio.xp.Main
+version: 1.0
+
+commands:
+  xpshop:
+    description: open the XpShop
