@@ -232,105 +232,155 @@ public class Main extends JavaPlugin implements Listener
 	
 	private void openDiamondBuyMenu(Player player)
 	{
+		ArrayList<String> lore = new ArrayList<String>();
+		ArrayList<String> lore1 = new ArrayList<String>();
+		ArrayList<String> lore2 = new ArrayList<String>();
+		ArrayList<String> lore3 = new ArrayList<String>();
+		ArrayList<String> lore4 = new ArrayList<String>();
+		ArrayList<String> lore5 = new ArrayList<String>();
+		ArrayList<String> lore6 = new ArrayList<String>();
+		ArrayList<String> lore7 = new ArrayList<String>();
+		ArrayList<String> lore8 = new ArrayList<String>();
+		ArrayList<String> lore9 = new ArrayList<String>();
+		ArrayList<String> lore10 = new ArrayList<String>();
+		ArrayList<String> lore11 = new ArrayList<String>();
+		ArrayList<String> lore12 = new ArrayList<String>();
+		ArrayList<String> lore13 = new ArrayList<String>();
+		ArrayList<String> lore14 = new ArrayList<String>();
+		ArrayList<String> lore15 = new ArrayList<String>();
+		
 		Inventory buymenu = Bukkit.createInventory(null, 27, ChatColor.AQUA + "Diamond Buy Menu");
 		
 		ItemStack diamond4 = new ItemStack(Material.DIAMOND, 4);
 		ItemMeta diamond4Meta = diamond4.getItemMeta();
+		lore.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack diamond8 = new ItemStack(Material.DIAMOND, 8);
 		ItemMeta diamond8Meta = diamond8.getItemMeta();
+		lore1.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack diamond12 = new ItemStack(Material.DIAMOND, 12);
 		ItemMeta diamond12Meta = diamond12.getItemMeta();
+		lore2.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack diamond16 = new ItemStack(Material.DIAMOND, 16);
 		ItemMeta diamond16Meta = diamond16.getItemMeta();
+		lore3.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond20 = new ItemStack(Material.DIAMOND, 20);
 		ItemMeta diamond20Meta = diamond20.getItemMeta();
+		lore4.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond24 = new ItemStack(Material.DIAMOND, 24);
 		ItemMeta diamond24Meta = diamond24.getItemMeta();
+		lore5.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond28 = new ItemStack(Material.DIAMOND, 28);
 		ItemMeta diamond28Meta = diamond28.getItemMeta();
+		lore6.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond32 = new ItemStack(Material.DIAMOND, 32);
 		ItemMeta diamond32Meta = diamond32.getItemMeta();
+		lore7.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond36 = new ItemStack(Material.DIAMOND, 36);
 		ItemMeta diamond36Meta = diamond36.getItemMeta();
+		lore8.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond40 = new ItemStack(Material.DIAMOND, 40);
 		ItemMeta diamond40Meta = diamond40.getItemMeta();
+		lore9.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond44 = new ItemStack(Material.DIAMOND, 44);
 		ItemMeta diamond44Meta = diamond44.getItemMeta();
+		lore10.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond48 = new ItemStack(Material.DIAMOND, 48);
 		ItemMeta diamond48Meta = diamond48.getItemMeta();
+		lore11.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond52 = new ItemStack(Material.DIAMOND, 52);
 		ItemMeta diamond52Meta = diamond52.getItemMeta();
+		lore12.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond56 = new ItemStack(Material.DIAMOND, 56);
 		ItemMeta diamond56Meta = diamond56.getItemMeta();
+		lore13.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond60 = new ItemStack(Material.DIAMOND, 60);
 		ItemMeta diamond60Meta = diamond60.getItemMeta();
+		lore14.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack diamond64 = new ItemStack(Material.DIAMOND, 64);
 		ItemMeta diamond64Meta = diamond64.getItemMeta();
+		lore15.add(ChatColor.RED + "Cost: XP");
+		
+		diamond4Meta.setLore(lore);
+		diamond8Meta.setLore(lore1);
+		diamond12Meta.setLore(lore2);
+		diamond16Meta.setLore(lore3);
+		diamond20Meta.setLore(lore4);
+		diamond24Meta.setLore(lore5);
+		diamond28Meta.setLore(lore6);
+		diamond32Meta.setLore(lore7);
+		diamond36Meta.setLore(lore8);
+		diamond40Meta.setLore(lore9);
+		diamond44Meta.setLore(lore10);
+		diamond48Meta.setLore(lore11);
+		diamond52Meta.setLore(lore12);
+		diamond56Meta.setLore(lore13);
+		diamond60Meta.setLore(lore14);
+		diamond64Meta.setLore(lore15);
 		
 		ItemStack back = new ItemStack(Material.LAVA_BUCKET,1);
 		ItemMeta backMeta = back.getItemMeta();
 		
-		diamond4Meta.setDisplayName(String.format("%sDiamonds %sx4", ChatColor.AQUA, ChatColor.RED));
+		diamond4Meta.setDisplayName(String.format("%sDiamond %sx4", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond4.setItemMeta(diamond4Meta);
 		
-		diamond8Meta.setDisplayName(String.format("%sDiamonds %sx8", ChatColor.AQUA, ChatColor.RED));
+		diamond8Meta.setDisplayName(String.format("%sDiamond %sx8", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond8.setItemMeta(diamond8Meta);
 		
-		diamond12Meta.setDisplayName(String.format("%sDiamonds %sx12", ChatColor.AQUA, ChatColor.RED));
+		diamond12Meta.setDisplayName(String.format("%sDiamond %sx12", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond12.setItemMeta(diamond12Meta);
 
-		diamond16Meta.setDisplayName(String.format("%sDiamonds %sx16", ChatColor.AQUA, ChatColor.RED));
+		diamond16Meta.setDisplayName(String.format("%sDiamond %sx16", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond16.setItemMeta(diamond16Meta);
 
-		diamond20Meta.setDisplayName(String.format("%sDiamonds %sx20", ChatColor.AQUA, ChatColor.RED));
+		diamond20Meta.setDisplayName(String.format("%sDiamond %sx20", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond20.setItemMeta(diamond20Meta);
 
-		diamond24Meta.setDisplayName(String.format("%sDiamonds %sx24", ChatColor.AQUA, ChatColor.RED));
+		diamond24Meta.setDisplayName(String.format("%sDiamond %sx24", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond24.setItemMeta(diamond24Meta);
 
-		diamond28Meta.setDisplayName(String.format("%sDiamonds %sx28", ChatColor.AQUA, ChatColor.RED));
+		diamond28Meta.setDisplayName(String.format("%sDiamond %sx28", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond28.setItemMeta(diamond28Meta);
 
-		diamond32Meta.setDisplayName(String.format("%sDiamonds %sx32", ChatColor.AQUA, ChatColor.RED));
+		diamond32Meta.setDisplayName(String.format("%sDiamond %sx32", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond32.setItemMeta(diamond32Meta);
 
-		diamond36Meta.setDisplayName(String.format("%sDiamonds %sx36", ChatColor.AQUA, ChatColor.RED));
+		diamond36Meta.setDisplayName(String.format("%sDiamond %sx36", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond36.setItemMeta(diamond36Meta);
 
-		diamond40Meta.setDisplayName(String.format("%sDiamonds %sx40", ChatColor.AQUA, ChatColor.RED));
+		diamond40Meta.setDisplayName(String.format("%sDiamond %sx40", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond40.setItemMeta(diamond40Meta);
 
-		diamond44Meta.setDisplayName(String.format("%sDiamonds %sx44", ChatColor.AQUA, ChatColor.RED));
+		diamond44Meta.setDisplayName(String.format("%sDiamond %sx44", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond44.setItemMeta(diamond44Meta);
 
-		diamond48Meta.setDisplayName(String.format("%sDiamonds %sx48", ChatColor.AQUA, ChatColor.RED));
+		diamond48Meta.setDisplayName(String.format("%sDiamond %sx48", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond48.setItemMeta(diamond48Meta);
 
-		diamond52Meta.setDisplayName(String.format("%sDiamonds %sx52", ChatColor.AQUA, ChatColor.RED));
+		diamond52Meta.setDisplayName(String.format("%sDiamond %sx52", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond52.setItemMeta(diamond52Meta);
 
-		diamond56Meta.setDisplayName(String.format("%sDiamonds %sx56", ChatColor.AQUA, ChatColor.RED));
+		diamond56Meta.setDisplayName(String.format("%sDiamond %sx56", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond56.setItemMeta(diamond56Meta);
 
-		diamond60Meta.setDisplayName(String.format("%sDiamonds %sx60", ChatColor.AQUA, ChatColor.RED));
+		diamond60Meta.setDisplayName(String.format("%sDiamond %sx60", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond60.setItemMeta(diamond60Meta);
 
-		diamond64Meta.setDisplayName(String.format("%sDiamonds %sx64", ChatColor.AQUA, ChatColor.RED));
+		diamond64Meta.setDisplayName(String.format("%sDiamond %sx64", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond64.setItemMeta(diamond64Meta);		
 		
 		backMeta.setDisplayName(ChatColor.RED + "Back");
@@ -398,105 +448,155 @@ public class Main extends JavaPlugin implements Listener
 	
 	private void openGoldBuyMenu(Player player)
 	{
+		ArrayList<String> lore = new ArrayList<String>();
+		ArrayList<String> lore1 = new ArrayList<String>();
+		ArrayList<String> lore2 = new ArrayList<String>();
+		ArrayList<String> lore3 = new ArrayList<String>();
+		ArrayList<String> lore4 = new ArrayList<String>();
+		ArrayList<String> lore5 = new ArrayList<String>();
+		ArrayList<String> lore6 = new ArrayList<String>();
+		ArrayList<String> lore7 = new ArrayList<String>();
+		ArrayList<String> lore8 = new ArrayList<String>();
+		ArrayList<String> lore9 = new ArrayList<String>();
+		ArrayList<String> lore10 = new ArrayList<String>();
+		ArrayList<String> lore11 = new ArrayList<String>();
+		ArrayList<String> lore12 = new ArrayList<String>();
+		ArrayList<String> lore13 = new ArrayList<String>();
+		ArrayList<String> lore14 = new ArrayList<String>();
+		ArrayList<String> lore15 = new ArrayList<String>();
+		
 		Inventory buymenu = Bukkit.createInventory(null, 27, ChatColor.GOLD + "Gold Buy Menu");
 		
 		ItemStack gold4 = new ItemStack(Material.GOLD_INGOT, 4);
 		ItemMeta gold4Meta = gold4.getItemMeta();
+		lore.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack gold8 = new ItemStack(Material.GOLD_INGOT, 8);
 		ItemMeta gold8Meta = gold8.getItemMeta();
+		lore1.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack gold12 = new ItemStack(Material.GOLD_INGOT, 12);
 		ItemMeta gold12Meta = gold12.getItemMeta();
+		lore2.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack gold16 = new ItemStack(Material.GOLD_INGOT, 16);
 		ItemMeta gold16Meta = gold16.getItemMeta();
+		lore3.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold20 = new ItemStack(Material.GOLD_INGOT, 20);
 		ItemMeta gold20Meta = gold20.getItemMeta();
+		lore4.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold24 = new ItemStack(Material.GOLD_INGOT, 24);
 		ItemMeta gold24Meta = gold24.getItemMeta();
+		lore5.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold28 = new ItemStack(Material.GOLD_INGOT, 28);
 		ItemMeta gold28Meta = gold28.getItemMeta();
+		lore6.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold32 = new ItemStack(Material.GOLD_INGOT, 32);
 		ItemMeta gold32Meta = gold32.getItemMeta();
+		lore7.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold36 = new ItemStack(Material.GOLD_INGOT, 36);
 		ItemMeta gold36Meta = gold36.getItemMeta();
+		lore8.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold40 = new ItemStack(Material.GOLD_INGOT, 40);
 		ItemMeta gold40Meta = gold40.getItemMeta();
+		lore9.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold44 = new ItemStack(Material.GOLD_INGOT, 44);
 		ItemMeta gold44Meta = gold44.getItemMeta();
+		lore10.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold48 = new ItemStack(Material.GOLD_INGOT, 48);
 		ItemMeta gold48Meta = gold48.getItemMeta();
+		lore11.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold52 = new ItemStack(Material.GOLD_INGOT, 52);
 		ItemMeta gold52Meta = gold52.getItemMeta();
+		lore12.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold56 = new ItemStack(Material.GOLD_INGOT, 56);
 		ItemMeta gold56Meta = gold56.getItemMeta();
+		lore13.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold60 = new ItemStack(Material.GOLD_INGOT, 60);
 		ItemMeta gold60Meta = gold60.getItemMeta();
+		lore14.add(ChatColor.RED + "Cost: XP");
 
 		ItemStack gold64 = new ItemStack(Material.GOLD_INGOT, 64);
 		ItemMeta gold64Meta = gold64.getItemMeta();
+		lore15.add(ChatColor.RED + "Cost: XP");
 		
 		ItemStack back = new ItemStack(Material.LAVA_BUCKET,1);
 		ItemMeta backMeta = back.getItemMeta();
 		
-		gold4Meta.setDisplayName(String.format("%sgold %sx4", ChatColor.GOLD, ChatColor.RED));
+		gold4Meta.setLore(lore);
+		gold8Meta.setLore(lore1);
+		gold12Meta.setLore(lore2);
+		gold16Meta.setLore(lore3);
+		gold20Meta.setLore(lore4);
+		gold24Meta.setLore(lore5);
+		gold28Meta.setLore(lore6);
+		gold32Meta.setLore(lore7);
+		gold36Meta.setLore(lore8);
+		gold40Meta.setLore(lore9);
+		gold44Meta.setLore(lore10);
+		gold48Meta.setLore(lore11);
+		gold52Meta.setLore(lore12);
+		gold56Meta.setLore(lore13);
+		gold60Meta.setLore(lore14);
+		gold64Meta.setLore(lore15);
+		
+		gold4Meta.setDisplayName(String.format("%sGold Ingot %sx4", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold4.setItemMeta(gold4Meta);
 		
-		gold8Meta.setDisplayName(String.format("%sgold %sx8", ChatColor.GOLD, ChatColor.RED));
+		gold8Meta.setDisplayName(String.format("%sGold Ingot %sx8", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold8.setItemMeta(gold8Meta);
 		
-		gold12Meta.setDisplayName(String.format("%sgold %sx12", ChatColor.GOLD, ChatColor.RED));
+		gold12Meta.setDisplayName(String.format("%sGold Ingot %sx12", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold12.setItemMeta(gold12Meta);
 
-		gold16Meta.setDisplayName(String.format("%sgold %sx16", ChatColor.GOLD, ChatColor.RED));
+		gold16Meta.setDisplayName(String.format("%sGold Ingot %sx16", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold16.setItemMeta(gold16Meta);
 
-		gold20Meta.setDisplayName(String.format("%sgold %sx20", ChatColor.GOLD, ChatColor.RED));
+		gold20Meta.setDisplayName(String.format("%sGold Ingot %sx20", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold20.setItemMeta(gold20Meta);
 
-		gold24Meta.setDisplayName(String.format("%sgold %sx24", ChatColor.GOLD, ChatColor.RED));
+		gold24Meta.setDisplayName(String.format("%sGold Ingot %sx24", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold24.setItemMeta(gold24Meta);
 
-		gold28Meta.setDisplayName(String.format("%sgold %sx28", ChatColor.GOLD, ChatColor.RED));
+		gold28Meta.setDisplayName(String.format("%sGold Ingot %sx28", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold28.setItemMeta(gold28Meta);
 
-		gold32Meta.setDisplayName(String.format("%sgold %sx32", ChatColor.GOLD, ChatColor.RED));
+		gold32Meta.setDisplayName(String.format("%sGold Ingot %sx32", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold32.setItemMeta(gold32Meta);
 
-		gold36Meta.setDisplayName(String.format("%sgold %sx36", ChatColor.GOLD, ChatColor.RED));
+		gold36Meta.setDisplayName(String.format("%sGold Ingot %sx36", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold36.setItemMeta(gold36Meta);
 
-		gold40Meta.setDisplayName(String.format("%sgold %sx40", ChatColor.GOLD, ChatColor.RED));
+		gold40Meta.setDisplayName(String.format("%sGold Ingot %sx40", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold40.setItemMeta(gold40Meta);
 
-		gold44Meta.setDisplayName(String.format("%sgold %sx44", ChatColor.GOLD, ChatColor.RED));
+		gold44Meta.setDisplayName(String.format("%sGold Ingot %sx44", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold44.setItemMeta(gold44Meta);
 
-		gold48Meta.setDisplayName(String.format("%sgold %sx48", ChatColor.GOLD, ChatColor.RED));
+		gold48Meta.setDisplayName(String.format("%sGold Ingot %sx48", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold48.setItemMeta(gold48Meta);
 
-		gold52Meta.setDisplayName(String.format("%sgold %sx52", ChatColor.GOLD, ChatColor.RED));
+		gold52Meta.setDisplayName(String.format("%sGold Ingot %sx52", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold52.setItemMeta(gold52Meta);
 
-		gold56Meta.setDisplayName(String.format("%sgold %sx56", ChatColor.GOLD, ChatColor.RED));
+		gold56Meta.setDisplayName(String.format("%sGold Ingot %sx56", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold56.setItemMeta(gold56Meta);
 
-		gold60Meta.setDisplayName(String.format("%sgold %sx60", ChatColor.GOLD, ChatColor.RED));
+		gold60Meta.setDisplayName(String.format("%sGold Ingot %sx60", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold60.setItemMeta(gold60Meta);
 
-		gold64Meta.setDisplayName(String.format("%sgold %sx64", ChatColor.GOLD, ChatColor.RED));
+		gold64Meta.setDisplayName(String.format("%sGold Ingot %sx64", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold64.setItemMeta(gold64Meta);		
 		
 		backMeta.setDisplayName(ChatColor.RED + "Back");
@@ -564,105 +664,155 @@ public class Main extends JavaPlugin implements Listener
 	
 	private void openDiamondSellMenu(Player player)
 	{
+		ArrayList<String> lore = new ArrayList<String>();
+		ArrayList<String> lore1 = new ArrayList<String>();
+		ArrayList<String> lore2 = new ArrayList<String>();
+		ArrayList<String> lore3 = new ArrayList<String>();
+		ArrayList<String> lore4 = new ArrayList<String>();
+		ArrayList<String> lore5 = new ArrayList<String>();
+		ArrayList<String> lore6 = new ArrayList<String>();
+		ArrayList<String> lore7 = new ArrayList<String>();
+		ArrayList<String> lore8 = new ArrayList<String>();
+		ArrayList<String> lore9 = new ArrayList<String>();
+		ArrayList<String> lore10 = new ArrayList<String>();
+		ArrayList<String> lore11 = new ArrayList<String>();
+		ArrayList<String> lore12 = new ArrayList<String>();
+		ArrayList<String> lore13 = new ArrayList<String>();
+		ArrayList<String> lore14 = new ArrayList<String>();
+		ArrayList<String> lore15 = new ArrayList<String>();
+		
 		Inventory buymenu = Bukkit.createInventory(null, 27, ChatColor.AQUA + "Diamond Sell Menu");
 		
 		ItemStack diamond4 = new ItemStack(Material.DIAMOND, 4);
 		ItemMeta diamond4Meta = diamond4.getItemMeta();
+		lore.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack diamond8 = new ItemStack(Material.DIAMOND, 8);
 		ItemMeta diamond8Meta = diamond8.getItemMeta();
+		lore1.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack diamond12 = new ItemStack(Material.DIAMOND, 12);
 		ItemMeta diamond12Meta = diamond12.getItemMeta();
+		lore2.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack diamond16 = new ItemStack(Material.DIAMOND, 16);
 		ItemMeta diamond16Meta = diamond16.getItemMeta();
+		lore3.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond20 = new ItemStack(Material.DIAMOND, 20);
 		ItemMeta diamond20Meta = diamond20.getItemMeta();
+		lore4.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond24 = new ItemStack(Material.DIAMOND, 24);
 		ItemMeta diamond24Meta = diamond24.getItemMeta();
+		lore5.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond28 = new ItemStack(Material.DIAMOND, 28);
 		ItemMeta diamond28Meta = diamond28.getItemMeta();
+		lore6.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond32 = new ItemStack(Material.DIAMOND, 32);
 		ItemMeta diamond32Meta = diamond32.getItemMeta();
+		lore7.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond36 = new ItemStack(Material.DIAMOND, 36);
 		ItemMeta diamond36Meta = diamond36.getItemMeta();
+		lore8.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond40 = new ItemStack(Material.DIAMOND, 40);
 		ItemMeta diamond40Meta = diamond40.getItemMeta();
+		lore9.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond44 = new ItemStack(Material.DIAMOND, 44);
 		ItemMeta diamond44Meta = diamond44.getItemMeta();
+		lore10.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond48 = new ItemStack(Material.DIAMOND, 48);
 		ItemMeta diamond48Meta = diamond48.getItemMeta();
+		lore11.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond52 = new ItemStack(Material.DIAMOND, 52);
 		ItemMeta diamond52Meta = diamond52.getItemMeta();
+		lore12.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond56 = new ItemStack(Material.DIAMOND, 56);
 		ItemMeta diamond56Meta = diamond56.getItemMeta();
+		lore13.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond60 = new ItemStack(Material.DIAMOND, 60);
 		ItemMeta diamond60Meta = diamond60.getItemMeta();
+		lore14.add(ChatColor.RED + "Get: XP");
 
 		ItemStack diamond64 = new ItemStack(Material.DIAMOND, 64);
 		ItemMeta diamond64Meta = diamond64.getItemMeta();
+		lore15.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack back = new ItemStack(Material.LAVA_BUCKET,1);
 		ItemMeta backMeta = back.getItemMeta();
 		
-		diamond4Meta.setDisplayName(String.format("%sDiamonds %sx4", ChatColor.AQUA, ChatColor.RED));
+		diamond4Meta.setLore(lore);
+		diamond8Meta.setLore(lore1);
+		diamond12Meta.setLore(lore2);
+		diamond16Meta.setLore(lore3);
+		diamond20Meta.setLore(lore4);
+		diamond24Meta.setLore(lore5);
+		diamond28Meta.setLore(lore6);
+		diamond32Meta.setLore(lore7);
+		diamond36Meta.setLore(lore8);
+		diamond40Meta.setLore(lore9);
+		diamond44Meta.setLore(lore10);
+		diamond48Meta.setLore(lore11);
+		diamond52Meta.setLore(lore12);
+		diamond56Meta.setLore(lore13);
+		diamond60Meta.setLore(lore14);
+		diamond64Meta.setLore(lore15);
+		
+		diamond4Meta.setDisplayName(String.format("%sDiamond %sx4", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond4.setItemMeta(diamond4Meta);
 		
-		diamond8Meta.setDisplayName(String.format("%sDiamonds %sx8", ChatColor.AQUA, ChatColor.RED));
+		diamond8Meta.setDisplayName(String.format("%sDiamond %sx8", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond8.setItemMeta(diamond8Meta);
 		
-		diamond12Meta.setDisplayName(String.format("%sDiamonds %sx12", ChatColor.AQUA, ChatColor.RED));
+		diamond12Meta.setDisplayName(String.format("%sDiamond %sx12", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond12.setItemMeta(diamond12Meta);
 
-		diamond16Meta.setDisplayName(String.format("%sDiamonds %sx16", ChatColor.AQUA, ChatColor.RED));
+		diamond16Meta.setDisplayName(String.format("%sDiamond %sx16", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond16.setItemMeta(diamond16Meta);
 
-		diamond20Meta.setDisplayName(String.format("%sDiamonds %sx20", ChatColor.AQUA, ChatColor.RED));
+		diamond20Meta.setDisplayName(String.format("%sDiamond %sx20", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond20.setItemMeta(diamond20Meta);
 
-		diamond24Meta.setDisplayName(String.format("%sDiamonds %sx24", ChatColor.AQUA, ChatColor.RED));
+		diamond24Meta.setDisplayName(String.format("%sDiamond %sx24", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond24.setItemMeta(diamond24Meta);
 
-		diamond28Meta.setDisplayName(String.format("%sDiamonds %sx28", ChatColor.AQUA, ChatColor.RED));
+		diamond28Meta.setDisplayName(String.format("%sDiamond %sx28", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond28.setItemMeta(diamond28Meta);
 
-		diamond32Meta.setDisplayName(String.format("%sDiamonds %sx32", ChatColor.AQUA, ChatColor.RED));
+		diamond32Meta.setDisplayName(String.format("%sDiamond %sx32", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond32.setItemMeta(diamond32Meta);
 
-		diamond36Meta.setDisplayName(String.format("%sDiamonds %sx36", ChatColor.AQUA, ChatColor.RED));
+		diamond36Meta.setDisplayName(String.format("%sDiamond %sx36", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond36.setItemMeta(diamond36Meta);
 
-		diamond40Meta.setDisplayName(String.format("%sDiamonds %sx40", ChatColor.AQUA, ChatColor.RED));
+		diamond40Meta.setDisplayName(String.format("%sDiamond %sx40", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond40.setItemMeta(diamond40Meta);
 
-		diamond44Meta.setDisplayName(String.format("%sDiamonds %sx44", ChatColor.AQUA, ChatColor.RED));
+		diamond44Meta.setDisplayName(String.format("%sDiamond %sx44", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond44.setItemMeta(diamond44Meta);
 
-		diamond48Meta.setDisplayName(String.format("%sDiamonds %sx48", ChatColor.AQUA, ChatColor.RED));
+		diamond48Meta.setDisplayName(String.format("%sDiamond %sx48", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond48.setItemMeta(diamond48Meta);
 
-		diamond52Meta.setDisplayName(String.format("%sDiamonds %sx52", ChatColor.AQUA, ChatColor.RED));
+		diamond52Meta.setDisplayName(String.format("%sDiamond %sx52", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond52.setItemMeta(diamond52Meta);
 
-		diamond56Meta.setDisplayName(String.format("%sDiamonds %sx56", ChatColor.AQUA, ChatColor.RED));
+		diamond56Meta.setDisplayName(String.format("%sDiamond %sx56", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond56.setItemMeta(diamond56Meta);
 
-		diamond60Meta.setDisplayName(String.format("%sDiamonds %sx60", ChatColor.AQUA, ChatColor.RED));
+		diamond60Meta.setDisplayName(String.format("%sDiamond %sx60", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond60.setItemMeta(diamond60Meta);
 
-		diamond64Meta.setDisplayName(String.format("%sDiamonds %sx64", ChatColor.AQUA, ChatColor.RED));
+		diamond64Meta.setDisplayName(String.format("%sDiamond %sx64", ChatColor.AQUA, ChatColor.DARK_RED));
 		diamond64.setItemMeta(diamond64Meta);		
 		
 		backMeta.setDisplayName(ChatColor.RED + "Back");
@@ -730,105 +880,155 @@ public class Main extends JavaPlugin implements Listener
 	
 	private void openGoldSellMenu(Player player)
 	{
+		ArrayList<String> lore = new ArrayList<String>();
+		ArrayList<String> lore1 = new ArrayList<String>();
+		ArrayList<String> lore2 = new ArrayList<String>();
+		ArrayList<String> lore3 = new ArrayList<String>();
+		ArrayList<String> lore4 = new ArrayList<String>();
+		ArrayList<String> lore5 = new ArrayList<String>();
+		ArrayList<String> lore6 = new ArrayList<String>();
+		ArrayList<String> lore7 = new ArrayList<String>();
+		ArrayList<String> lore8 = new ArrayList<String>();
+		ArrayList<String> lore9 = new ArrayList<String>();
+		ArrayList<String> lore10 = new ArrayList<String>();
+		ArrayList<String> lore11 = new ArrayList<String>();
+		ArrayList<String> lore12 = new ArrayList<String>();
+		ArrayList<String> lore13 = new ArrayList<String>();
+		ArrayList<String> lore14 = new ArrayList<String>();
+		ArrayList<String> lore15 = new ArrayList<String>();
+		
 		Inventory buymenu = Bukkit.createInventory(null, 27, ChatColor.GOLD + "Gold Sell Menu");
 		
 		ItemStack gold4 = new ItemStack(Material.GOLD_INGOT, 4);
 		ItemMeta gold4Meta = gold4.getItemMeta();
+		lore.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack gold8 = new ItemStack(Material.GOLD_INGOT, 8);
 		ItemMeta gold8Meta = gold8.getItemMeta();
+		lore1.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack gold12 = new ItemStack(Material.GOLD_INGOT, 12);
 		ItemMeta gold12Meta = gold12.getItemMeta();
+		lore2.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack gold16 = new ItemStack(Material.GOLD_INGOT, 16);
 		ItemMeta gold16Meta = gold16.getItemMeta();
+		lore3.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold20 = new ItemStack(Material.GOLD_INGOT, 20);
 		ItemMeta gold20Meta = gold20.getItemMeta();
+		lore4.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold24 = new ItemStack(Material.GOLD_INGOT, 24);
 		ItemMeta gold24Meta = gold24.getItemMeta();
+		lore5.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold28 = new ItemStack(Material.GOLD_INGOT, 28);
 		ItemMeta gold28Meta = gold28.getItemMeta();
+		lore6.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold32 = new ItemStack(Material.GOLD_INGOT, 32);
 		ItemMeta gold32Meta = gold32.getItemMeta();
+		lore7.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold36 = new ItemStack(Material.GOLD_INGOT, 36);
 		ItemMeta gold36Meta = gold36.getItemMeta();
+		lore8.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold40 = new ItemStack(Material.GOLD_INGOT, 40);
 		ItemMeta gold40Meta = gold40.getItemMeta();
+		lore9.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold44 = new ItemStack(Material.GOLD_INGOT, 44);
 		ItemMeta gold44Meta = gold44.getItemMeta();
+		lore10.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold48 = new ItemStack(Material.GOLD_INGOT, 48);
 		ItemMeta gold48Meta = gold48.getItemMeta();
+		lore11.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold52 = new ItemStack(Material.GOLD_INGOT, 52);
 		ItemMeta gold52Meta = gold52.getItemMeta();
+		lore12.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold56 = new ItemStack(Material.GOLD_INGOT, 56);
 		ItemMeta gold56Meta = gold56.getItemMeta();
+		lore13.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold60 = new ItemStack(Material.GOLD_INGOT, 60);
 		ItemMeta gold60Meta = gold60.getItemMeta();
+		lore14.add(ChatColor.RED + "Get: XP");
 
 		ItemStack gold64 = new ItemStack(Material.GOLD_INGOT, 64);
 		ItemMeta gold64Meta = gold64.getItemMeta();
+		lore15.add(ChatColor.RED + "Get: XP");
 		
 		ItemStack back = new ItemStack(Material.LAVA_BUCKET,1);
 		ItemMeta backMeta = back.getItemMeta();
 		
-		gold4Meta.setDisplayName(String.format("%sgold %sx4", ChatColor.GOLD, ChatColor.RED));
+		gold4Meta.setLore(lore);
+		gold8Meta.setLore(lore1);
+		gold12Meta.setLore(lore2);
+		gold16Meta.setLore(lore3);
+		gold20Meta.setLore(lore4);
+		gold24Meta.setLore(lore5);
+		gold28Meta.setLore(lore6);
+		gold32Meta.setLore(lore7);
+		gold36Meta.setLore(lore8);
+		gold40Meta.setLore(lore9);
+		gold44Meta.setLore(lore10);
+		gold48Meta.setLore(lore11);
+		gold52Meta.setLore(lore12);
+		gold56Meta.setLore(lore13);
+		gold60Meta.setLore(lore14);
+		gold64Meta.setLore(lore15);
+		
+		gold4Meta.setDisplayName(String.format("%sGold Ingot %sx4", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold4.setItemMeta(gold4Meta);
 		
-		gold8Meta.setDisplayName(String.format("%sgold %sx8", ChatColor.GOLD, ChatColor.RED));
+		gold8Meta.setDisplayName(String.format("%sGold Ingot %sx8", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold8.setItemMeta(gold8Meta);
 		
-		gold12Meta.setDisplayName(String.format("%sgold %sx12", ChatColor.GOLD, ChatColor.RED));
+		gold12Meta.setDisplayName(String.format("%sGold Ingot %sx12", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold12.setItemMeta(gold12Meta);
 
-		gold16Meta.setDisplayName(String.format("%sgold %sx16", ChatColor.GOLD, ChatColor.RED));
+		gold16Meta.setDisplayName(String.format("%sGold Ingot %sx16", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold16.setItemMeta(gold16Meta);
 
-		gold20Meta.setDisplayName(String.format("%sgold %sx20", ChatColor.GOLD, ChatColor.RED));
+		gold20Meta.setDisplayName(String.format("%sGold Ingot %sx20", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold20.setItemMeta(gold20Meta);
 
-		gold24Meta.setDisplayName(String.format("%sgold %sx24", ChatColor.GOLD, ChatColor.RED));
+		gold24Meta.setDisplayName(String.format("%sGold Ingot %sx24", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold24.setItemMeta(gold24Meta);
 
-		gold28Meta.setDisplayName(String.format("%sgold %sx28", ChatColor.GOLD, ChatColor.RED));
+		gold28Meta.setDisplayName(String.format("%sGold Ingot %sx28", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold28.setItemMeta(gold28Meta);
 
-		gold32Meta.setDisplayName(String.format("%sgold %sx32", ChatColor.GOLD, ChatColor.RED));
+		gold32Meta.setDisplayName(String.format("%sGold Ingot %sx32", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold32.setItemMeta(gold32Meta);
 
-		gold36Meta.setDisplayName(String.format("%sgold %sx36", ChatColor.GOLD, ChatColor.RED));
+		gold36Meta.setDisplayName(String.format("%sGold Ingot %sx36", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold36.setItemMeta(gold36Meta);
 
-		gold40Meta.setDisplayName(String.format("%sgold %sx40", ChatColor.GOLD, ChatColor.RED));
+		gold40Meta.setDisplayName(String.format("%sGold Ingot %sx40", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold40.setItemMeta(gold40Meta);
 
-		gold44Meta.setDisplayName(String.format("%sgold %sx44", ChatColor.GOLD, ChatColor.RED));
+		gold44Meta.setDisplayName(String.format("%sGold Ingot %sx44", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold44.setItemMeta(gold44Meta);
 
-		gold48Meta.setDisplayName(String.format("%sgold %sx48", ChatColor.GOLD, ChatColor.RED));
+		gold48Meta.setDisplayName(String.format("%sGold Ingot %sx48", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold48.setItemMeta(gold48Meta);
 
-		gold52Meta.setDisplayName(String.format("%sgold %sx52", ChatColor.GOLD, ChatColor.RED));
+		gold52Meta.setDisplayName(String.format("%sGold Ingot %sx52", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold52.setItemMeta(gold52Meta);
 
-		gold56Meta.setDisplayName(String.format("%sgold %sx56", ChatColor.GOLD, ChatColor.RED));
+		gold56Meta.setDisplayName(String.format("%sGold Ingot %sx56", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold56.setItemMeta(gold56Meta);
 
-		gold60Meta.setDisplayName(String.format("%sgold %sx60", ChatColor.GOLD, ChatColor.RED));
+		gold60Meta.setDisplayName(String.format("%sGold Ingot %sx60", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold60.setItemMeta(gold60Meta);
 
-		gold64Meta.setDisplayName(String.format("%sgold %sx64", ChatColor.GOLD, ChatColor.RED));
+		gold64Meta.setDisplayName(String.format("%sGold Ingot %sx64", ChatColor.GOLD, ChatColor.DARK_RED));
 		gold64.setItemMeta(gold64Meta);		
 		
 		backMeta.setDisplayName(ChatColor.RED + "Back");
